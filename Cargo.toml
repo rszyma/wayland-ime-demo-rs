@@ -1,0 +1,11 @@
+[package]
+name = "wayland-send-unicode"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wayland-client = {version = "0.31.7"}
+wayland-protocols-misc = { version = "0.3.5", features = ["client"] }
+
+[profile.dev]
+panic = "unwind"
